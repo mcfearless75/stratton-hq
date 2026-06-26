@@ -255,12 +255,13 @@
     .prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: center; }
     .prod-grid.reverse { direction: rtl; }
     .prod-grid.reverse > * { direction: ltr; }
-    .prod-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+    .prod-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; align-items: stretch; }
     .prod-img { border-radius: 20px; overflow: hidden; }
     .prod-img.tall { grid-row: span 2; }
     .prod-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .prod-img.tall img { height: 100%; min-height: 320px; }
-    .prod-img-sq img { aspect-ratio: 1; }
+    .prod-img-sq { display: flex; }
+    .prod-img-sq img { aspect-ratio: 1; flex: 1; }
     .prod-content h2 { margin-bottom: 1rem; }
     .prod-content > p { margin-bottom: 1.5rem; max-width: 50ch; }
     .prod-list { margin-bottom: 2rem; }
@@ -664,6 +665,7 @@
           <div class="prod-imgs" aria-hidden="true">
             <div class="prod-img tall"><img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&q=80&w=700" alt="Specialist window and door repair work" loading="lazy" width="700" height="600"></div>
             <div class="prod-img prod-img-sq"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=500" alt="Window repair detail" loading="lazy" width="500" height="500"></div>
+            <div class="prod-img prod-img-sq"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=500" alt="Interior glazing detail after repair" loading="lazy" width="500" height="500"></div>
           </div>
         </div>
       </div>
